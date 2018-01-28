@@ -3,16 +3,24 @@ roberto:
   name: Roberto Luis Rodriguez
   email: robertorodriguezjr86@gmail.com
   password_digest: <%= User.digest('password') %>
+  admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
 
 caffjag:
   name: Caffeine Jag
   email: caffeinejag@gmail.com
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
 
 robrod:
   name: Robrodjr
   email: robrodjr1@hotmail.com
   password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
 #
 # lana:
 #   name: Lana Kane
