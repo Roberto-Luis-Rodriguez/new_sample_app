@@ -104,4 +104,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # If you only need it in production add to config/environments/production.rb. This can be without quotes:
+  # config.middleware.use Utf8Sanitizer
 end
