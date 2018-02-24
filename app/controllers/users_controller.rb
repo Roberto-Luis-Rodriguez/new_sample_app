@@ -48,6 +48,22 @@ end
   redirect_to users_url
  end
 
+ def following
+   @title = "Following"
+   @user  = User.find(params[:id])
+   # @users = @user.following.paginate(page: params[:page])
+   @users = @user.following
+   render 'show_follow'
+ end
+
+ def followers
+   @title = "Followers"
+   @user  = User.find(params[:id])
+   # @users = @user.followers.paginate(page: params[:page])
+   @users = @user.followers.paginate
+   render 'show_follow'
+ end
+
  private
 
    def user_params
