@@ -28,13 +28,12 @@ margom:
   # activated: true
   # activated_at: <%= Time.zone.now %>
 
-:
+robrod:
   name: Rob Rod Jr
   email: rob_rod_jr@yahoo.com
   password_digest: <%= User.digest('password') %>
   # activated: true
   # activated_at: <%= Time.zone.now %>
-
 
 jonpark:
   name: John Parker
